@@ -1,0 +1,257 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+header {
+  background: #2e7d32;
+  color: white;
+  padding: 1rem;
+}
+
+nav a {
+  color: white;
+  margin-right: 15px;
+  text-decoration: none;
+}
+/* --- ESTRUCTURA GENERAL --- */
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+/* --- HEADER SUPERIOR --- */
+.header-top {
+  background: #1b5e20;
+  color: #fff;
+  font-size: 0.9rem;
+}
+
+.header-top .container {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 20px;
+}
+
+/* --- HEADER PRINCIPAL --- */
+.header-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+
+/* --- LOGO --- */
+.logo h1 {
+  margin: 0;
+  color: #ffffff;
+}
+
+.logo p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* --- MENÚ --- */
+.nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+}
+
+.nav a:hover {
+  color: #2e7d32;
+}
+/* --- SECCIONES GENERALES --- */
+.section {
+  padding: 60px 0;
+}
+
+/* --- EMPRESA --- */
+.empresa {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+.empresa-texto {
+  flex: 1;
+}
+
+.empresa-texto h2 {
+  color: #2e7d32;
+  margin-bottom: 20px;
+}
+
+.empresa-texto ul {
+  padding-left: 20px;
+}
+
+.empresa-texto li {
+  margin-bottom: 10px;
+}
+
+.empresa-imagen {
+  flex: 1;
+}
+
+.empresa-imagen img {
+  width: 100%;
+  border-radius: 6px;
+}
+/* --- SECCIONES ALTERNAS --- */
+.section-gris {
+  background: #f4f4f4;
+}
+
+/* --- BLOQUES DE CONTENIDO --- */
+.bloque {
+  max-width: 800px;
+}
+
+.bloque h2 {
+  color: #2e7d32;
+  margin-bottom: 15px;
+}
+
+.bloque p {
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+/* --- LISTAS DE MAQUINARIA --- */
+.lista-maquinaria {
+  list-style: none;
+  padding: 0;
+}
+
+.lista-maquinaria li {
+  padding: 8px 0;
+  border-bottom: 1px solid #ddd;
+}
+/* --- FORMULARIO CONTACTO --- */
+.contacto-formulario form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 500px;
+}
+
+.contacto-formulario input,
+.contacto-formulario textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 0.95rem;
+}
+
+.contacto-formulario button {
+  padding: 10px 15px;
+  background-color: #2e7d32;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.contacto-formulario button:hover {
+  background-color: #1b5e20;
+}
+
+/* --- INFO DE CONTACTO --- */
+.contacto-info p {
+  margin: 5px 0;
+}
+
+/* --- HORARIO --- */
+.horario {
+  list-style: none;
+  padding: 0;
+}
+
+.horario li {
+  margin-bottom: 8px;
+}
+
+/* --- FOOTER --- */
+.footer {
+  background: #1b5e20;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 40px;
+  font-size: 0.9rem;
+}
+/* --- RESPONSIVE MÓVIL --- */
+@media (max-width: 992px) {
+  /* Header principal */
+  .header-main {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav ul {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 15px;
+  }
+
+  /* Sección Empresa */
+  .empresa {
+    flex-direction: column;
+  }
+
+  .empresa-imagen {
+    margin-top: 20px;
+  }
+
+  /* Bloques generales */
+  .bloque {
+    width: 100%;
+  }
+
+  /* Formulario contacto */
+  .contacto-formulario form {
+    width: 100%;
+  }
+}
+
+/* --- RESPONSIVE MÓVIL PEQUEÑO (CELULARES) --- */
+@media (max-width: 576px) {
+  .header-top .container {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .header-main .logo h1 {
+    font-size: 1.5rem;
+  }
+
+  .header-main .logo p {
+    font-size: 0.85rem;
+  }
+
+  .nav ul {
+    gap: 5px;
+  }
+
+  .empresa-imagen img {
+    width: 100%;
+  }
+
+  .contacto-formulario input,
+  .contacto-formulario textarea,
+  .contacto-formulario button {
+    font-size: 0.9rem;
+  }
+}
