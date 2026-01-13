@@ -378,3 +378,18 @@ nav a {
     font-size: 1.5rem;
   }
 }
+.slide.promocion img {
+  object-fit: contain; /* Mantiene toda la imagen visible */
+  height: auto;        /* Ajusta altura automáticamente */
+  max-height: 70vh;    /* No ocupe toda la pantalla */
+  width: 100%;
+}
+@media (max-width: 768px) {
+  .slide.promocion img {
+    max-height: 50vh;   /* Reducir aún más en móviles */
+  }
+}
+.slide.promocion img {
+  display: block;
+  margin: 0 auto;
+}
