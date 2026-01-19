@@ -1,3 +1,4 @@
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -392,4 +393,50 @@ nav a {
 .slide.promocion img {
   display: block;
   margin: 0 auto;
+}
+/* Slider adaptable a móviles */
+@media (max-width: 768px) {
+  .hero-slider {
+    height: 50vh; /* Menos altura para móviles */
+  }
+
+  .slide img,
+  .slide video {
+    object-fit: contain; /* Mantiene toda la imagen visible */
+    width: 100%;
+    height: 100%;
+  }
+
+  .hero-texto {
+    bottom: 10%;
+    left: 5%;
+    right: 5%;
+    max-width: 90%;
+    font-size: 1rem;
+    padding: 10px 15px;
+  }
+}
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #25D366; /* verde WhatsApp */
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  transition: transform 0.3s;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.1);
+}
+
+.whatsapp-float img {
+  width: 35px;
+  height: 35px;
 }
